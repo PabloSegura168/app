@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_background"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgDetalleFoto"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="#222"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/txtDetalleTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TÍTULO INCIDENCIA"
+            android:textColor="@color/neon_blue"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Urgencia: "
+                android:textColor="@color/gray_text"/>
+
+            <TextView
+                android:id="@+id/txtDetalleUrgencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ALTA"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  |  Fecha: "
+                android:textColor="@color/gray_text"/>
+
+            <TextView
+                android:id="@+id/txtDetalleFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01/01/2024"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DESCRIPCIÓN:"
+            android:textColor="@color/gray_text"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/txtDetalleDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aquí va la descripción..."
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:background="@color/card_dark"
+            android:padding="15dp"
+            android:layout_marginBottom="30dp"/>
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="VOLVER"
+            android:backgroundTint="@color/neon_blue"
+            android:textColor="@color/black_background"/>
+
+    </LinearLayout>
+</ScrollView>

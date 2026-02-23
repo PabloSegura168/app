@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black_background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Asistente IA (Gemini)"
+        android:textColor="@color/neon_blue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:gravity="center"
+        android:background="@color/card_dark"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerChat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:clipToPadding="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/card_dark">
+
+        <EditText
+            android:id="@+id/etMensaje"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Escribe un mensaje..."
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray_text"
+            android:background="@drawable/btn_neon_blue_outline"
+            android:padding="12dp"/>
+
+        <Button
+            android:id="@+id/btnEnviarMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ENVIAR"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/neon_blue"
+            android:textColor="@color/black_background"/>
+    </LinearLayout>
+</LinearLayout>

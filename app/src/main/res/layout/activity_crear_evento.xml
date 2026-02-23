@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@color/black_background"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PANEL DE ADMIN"
+        android:textColor="@color/urgency_high"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"/>
+
+    <EditText
+        android:id="@+id/etNombreEvento"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Nombre del Evento"
+        android:textColor="@color/white"
+        android:textColorHint="@color/gray_text"
+        android:background="@color/card_dark"
+        android:padding="15dp"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/etUbicacionEvento"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Ubicación (Ej: Pabellón 5)"
+        android:textColor="@color/white"
+        android:textColorHint="@color/gray_text"
+        android:background="@color/card_dark"
+        android:padding="15dp"
+        android:layout_marginBottom="40dp"/>
+
+    <Button
+        android:id="@+id/btnGuardarEvento"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="CREAR EVENTO"
+        android:backgroundTint="@color/urgency_high"
+        android:textColor="@color/black_background"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnAbrirMapaSelector"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="📍 MARCAR EN EL MAPA"
+        android:backgroundTint="@color/card_dark"
+        android:textColor="@color/neon_blue"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/txtCoordenadas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coordenadas: Pendiente"
+        android:textColor="@color/gray_text"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categoría:"
+        android:textColor="@color/white"/>
+
+    <RadioGroup
+        android:id="@+id/rgCategoriaEvento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+        <RadioButton android:id="@+id/rbVideojuegos" android:text="🎮 Videojuegos" android:textColor="@color/white" android:checked="true"/>
+        <RadioButton android:id="@+id/rbAnime" android:text="🌸 Anime" android:textColor="@color/white"/>
+        <RadioButton android:id="@+id/rbMusica" android:text="🎸 Música" android:textColor="@color/white"/>
+    </RadioGroup>
+
+</LinearLayout>

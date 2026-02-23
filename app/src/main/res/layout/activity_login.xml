@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="#121212">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INICIAR SESIÓN"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Correo electrónico"
+        android:textColorHint="#888888"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#00FFFF"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Contraseña"
+        android:textColorHint="#888888"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#00FFFF"
+        android:inputType="textPassword"
+        android:layout_marginBottom="25dp"/>
+
+    <Button
+        android:id="@+id/btnEntrar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="ENTRAR"
+        android:backgroundTint="#FF007F"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--- O entra con ---"
+        android:textColor="#AAAAAA"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:id="@+id/btnGoogleLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="🌍 Entrar con Google"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#000000"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:id="@+id/btnIrRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="CREAR NUEVA CUENTA"
+        android:backgroundTint="#00FFFF"
+        android:textColor="#000000"
+        android:layout_marginBottom="30dp"/>
+
+</LinearLayout>
